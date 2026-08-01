@@ -1,0 +1,222 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; list-style: none; text-decoration: none; }
+
+
+html { font-size: 62.5%; } /* 1rem = 10px */
+@media (max-width: 1200px) { html { font-size: 56.25%; } }
+@media (max-width: 992px)  { html { font-size: 50%; }    }
+@media (max-width: 768px)  { html { font-size: 43.75%; } }
+@media (max-width: 480px)  { html { font-size: 37.5%; }  }
+
+body { direction: rtl; font-family: 'Vazirmatn FD', sans-serif; padding: 2rem; }
+
+.blog-section {
+  background-color: #FFF4F8;
+  max-width: 135rem;
+  margin: 0 auto;
+  border-radius: 4rem 4rem 0 0;
+  padding: 5.6rem 4rem 8rem 4rem;
+}
+
+.blog-header {
+  width: 46.5rem;
+  height: 12.7rem;
+  margin: 0 auto 4.8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.0rem;
+}
+
+.line {
+  width: 6.5rem;
+  height: 0.1rem;
+  background-color: #B7B7B7;
+}
+
+.page-info {
+  font-size: 1.5rem;
+  color: #606060;
+  white-space: nowrap;
+}
+
+.blog-header h2 {
+  font-size: 2.4rem;
+  color: #000000;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+.blog-header .highlight {
+  color: #CC312D;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  max-width: 127rem;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: #ffffff;
+  width: 100%;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.badge-wrapper {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  direction: rtl;
+}
+
+.dot {
+  width: 1.0rem;
+  height: 1.0rem;
+  background-color: #CC312D;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.badge-bg {
+  width: 7.7rem;
+  height: 3.2rem;
+  padding: 0.9rem 1.8rem;
+  background: rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(2.4rem);
+  border-radius: 3rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-text {
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.card-content {
+  padding: 2rem 2rem 1.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  font-style: SemiBold;
+  line-height: 3.5rem;
+  white-space: nowrap;
+  overflow: hidden;         
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card-desc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #606060;
+  line-height: 2.4rem;
+  font-style: Regular;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;         
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    direction: ltr;
+}
+
+.more-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    direction:ltr;
+    height: 2.4rem;
+}
+
+.link-text {
+    font-size: 1.4rem;
+    color: #CC312D;
+    font-weight: 600;
+    line-height: 2.4rem;
+    white-space: nowrap;
+    display: block;
+}
+
+.arrow-icon-wrapper {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.arrow-icon {
+    width: 1.75rem;
+    height: 1.35rem;
+    stroke: #CC312D;
+    fill: none;
+    display: block;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #606060;
+}
+
+@media (max-width: 1200px) { .cards-container { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 992px)  { .cards-container { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .cards-container { grid-template-columns: 1fr; } }

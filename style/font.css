@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../assest/fonts/Vazir/Vazirmatn-Bold.woff2) format("woff2");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(../assest/fonts/Vazir/Vazirmatn-Medium.woff2) format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(../assest/fonts/Vazir/Vazirmatn-Regular.woff2) format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(../assest/fonts/Vazir/Vazirmatn-SemiBold.woff2) format("woff2");
+    font-weight: 700;
+}
