@@ -4,7 +4,7 @@
 
 📸 Preview
 
-![Gallery Preview](preview.png)
+![Gallery Preview](responsive-preview.png)
 
 ---
 
